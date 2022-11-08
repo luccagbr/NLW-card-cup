@@ -16,17 +16,24 @@ html, body {
 
 body {
     background-image: url(../assets/background-blue.svg);
-    background-repeat: no-repeat;
-    background-position-x: center;
-    background-position-y: 55%;
+    background-repeat: repeat;
+    background-position: -715px;
+    /* background-position-x: bottom;
+    background-position-y: -715; */
     background-attachment: scroll;
+}
+
+body * {
+    font-family: 'Roboto', sans-serif;
 }
 
 header {
     display: flex;
     justify-content: center;
+    padding: 15px;
     align-items: center;
     width: 100%;
+    margin-bottom: 5%;
     height: 15%;
 }
 
@@ -36,51 +43,73 @@ header {
 }
 
 #cards {
-    width: 30%;
+    width: 100%;
     display: flex;
+    flex-direction: column;
+    gap: 32px;
     justify-content: center;
-    margin: 0 auto;
-    border: 1px solid white;
-    padding: 10px;
+    align-items: center;
 }
 
 .card {
-    border: 1px solid red;
-    width: 50%;
+    width: 350px;
+    justify-content: center;
+    border: solid #e6a800;
+    border-width: 0 0 2px 0;
+    background-color: #26292e;
+    /* border-radius: 25px; */
+    padding-bottom: 40px
 }
 
 .card h2 {
-    display: flex;
-    width: 100%;
-    gap: 16px;
-    padding: 2% 5%;
-    justify-content: center;
-    font-size: 1.5em;
-    border: 1px solid white;
-    margin-bottom: 5%;
+    color: #e6a800;
+    align-items: center;
+    padding: 5px 10px;
+    margin: 20px auto;
+    border: 1px solid #e6a800;
+    width: 160px;
+    border-radius: 15px;
+}
+
+.card span {
+    color: white;
+    margin-left: 5%;
+    text-transform: uppercase;
+    font-size: 14px;
 }
 
 .align-times {
     width: 100%;
+    padding: 15px;
+}
+
+
+
+.align-times ul {
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+    border: 1px solid white;
 }
 
 .align-times li {
+    width: 300px;
+    margin: 0 auto;
+    font-size: 1.5em;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    margin: 10px;
-    padding: 5px;
+    /* border:1px solid orange; */
+}
+
+.align-times li + li {
+    padding-top: 45px;
 }
 
 .align-times img {
-    margin: 0 10%;
-    width: 30%;
+    width: 20%;
 }
 
 li {
     list-style: none;
-}
-
-ul {
-    border: 1px solid white;
 }
